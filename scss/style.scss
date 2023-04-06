@@ -1,0 +1,396 @@
+header nav ul li a{
+    color: white;
+    text-align: end;
+    flex-direction: row;
+      
+}
+header{
+    background-color: black; 
+    background-size: cover;
+    flex-direction: row;
+
+}
+
+.barrainicio{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+body{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background-image: url(../imagenes/bg.jpg);
+    background-size: cover;
+    column-gap: 20px;
+    text-decoration: white solid;
+    
+}
+.titulo{
+    color: rgb(30, 50, 162);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+}
+
+.decoracion{
+    text-decoration: double;
+    color: white;
+}
+
+footer{
+    background-color: lightgray;
+    background-size: cover;
+         
+}
+.links{
+    justify-content: center;
+}
+.parrafo1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+
+}
+.TITULOGRANDE{
+    size: 25px;
+    color: white;
+}
+
+.skills{
+    padding: 1em 0 ;
+
+}
+.skills__items{
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+}
+.skills__bar{
+    width: 600px;
+    height: 8px;
+    background-color: yellow;
+
+}
+
+
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 15px;
+}
+li{
+    border: 1px white solid;
+    padding: 10px 13px;
+    
+}
+
+main div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 300px;
+    justify-content: space-evenly;
+}
+
+section div{
+    margin-top: 50px;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+}
+
+.img1{
+    height: 210px;
+    width: 200px;
+}
+
+.inf{
+    height: 400px;
+    width: 400px;
+   
+}
+
+.juv{
+    height: 450px;
+    width: 450px;
+    
+
+}
+
+.PS{
+    height: 400px;
+    width: 400px;
+    
+    
+}
+
+.pelota{
+    height: 450px;
+    width: 400px;
+}
+
+#horarios-section{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr;
+    grid-template-areas: 
+    "img_inf text_inf"
+    "text_juv img_juv"
+    "img_ps text_ps";
+    column-gap: 20px;
+    row-gap: 30px;
+   
+}
+
+#horarios-section div:nth-child(1){
+     grid-area: img_inf;
+}
+
+#horarios-section div:nth-child(2){
+    grid-area: text_inf;
+     
+}
+
+#horarios-section div:nth-child(3){
+    grid-area: img_juv;
+}
+
+#horarios-section div:nth-child(4){
+    grid-area: text_juv;
+}
+
+#horarios-section div:nth-child(5){
+    grid-area: img_ps;
+}
+
+#horarios-section div:nth-child(6){
+    grid-area: text_ps;
+}
+
+@media screen and (max-width: 600px) {
+    #horarios-section{
+        grid-template-columns: 0.3fr ;
+        grid-template-rows:auto auto auto;
+    }
+    #actividades-main{
+          grid-template-columns: 0.2fr 0.2fr;
+            grid-template-rows: auto auto auto auto;
+    }
+    
+}
+
+#actividades-main{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 0.4fr 0.4fr;
+    grid-template-rows: 1fr 1fr 1fr 1.5fr;
+    grid-template-areas: 
+    "img_des text_des"
+    "text_red img_red"
+    "img_camp text_camp"
+    "vid vid";
+    row-gap: 120px;
+    column-gap: 20px;
+}
+
+#actividades-main div:nth-child(1){
+    grid-area: img_des;
+}
+
+#actividades-main div:nth-child(2){
+    grid-area: text_des;
+}
+
+#actividades-main div:nth-child(3){
+    grid-area: img_red; 
+}
+
+#actividades-main div:nth-child(4){
+    grid-area: text_red;
+}
+
+#actividades-main div:nth-child(5){
+    grid-area: img_camp;
+}
+
+#actividades-main div:nth-child(6){
+    grid-area: text_camp;
+}
+
+#actividades-main div:nth-child(7){
+    grid-area: vid;
+}
+
+.descalzos{
+    height: 400px;
+    width: 400px;
+}
+
+.redonda{
+    height: 350px;
+    width: 350px;
+
+}
+
+.camp{
+    height: 400px;
+    width: 400px;
+
+}
+#contacto__main{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "contact contact"
+    "text_sede  map_sede"
+    "text_ram  map_ram"
+    "text_cha  map_cha";
+    column-gap: 50px;
+    row-gap: 30px;
+   
+    
+}
+
+#contacto__main div:nth-child(1){
+    grid-area: contact;
+}
+
+#contacto__main div:nth-child(2){
+    grid-area: text_sede;
+}
+
+#contacto__main div:nth-child(3){
+    grid-area: map_sede;
+}
+
+
+#contacto__main div:nth-child(4){
+    grid-area: text_ram;
+}
+
+
+#contacto__main div:nth-child(5){
+    grid-area: map_ram;
+}
+
+
+#contacto__main div:nth-child(6){
+    grid-area: text_cha;
+}
+
+
+#contacto__main div:nth-child(7){
+    grid-area: map_cha;
+}
+
+#index_main{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.3fr 1fr 1fr;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "img1 img2 img3"
+    "text1 text2 text3";
+    row-gap: 50px;
+    column-gap: 50px;
+}
+
+#index_main div:nth-child(1){
+    grid-area: titulo;
+}
+
+#index_main div:nth-child(2){
+    grid-area: imag1;
+}
+
+#index_main div:nth-child(3){
+    grid-area: text1;
+}
+
+#index_main div:nth-child(4){
+    grid-area: img2;
+}
+
+#index_main div:nth-child(5){
+    grid-area: text2;
+}
+
+#index_main div:nth-child(6){
+    grid-area: img3;
+}
+
+#index_main div:nth-child(7){
+    grid-area: text3;
+}
+section div{
+    background-color: white;
+    background-size: cover;
+}
+
+.contenidocontacto{
+    color: white;
+}
+
+main{
+    div{
+        
+        h2{
+            color: white;
+        }
+    }
+}
+.parrafo1{color: white;}
+
+.contenidoactividades{
+    color: white;
+}
+.contenedor{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+header img{
+    width: 100%;
+    height: auto;
+}
+
+main{
+    width: 70%;
+    height: auto;
+}
+
+section{
+    width: 100%;
+    height: auto;
+}
+
+
+
+@media screen and (max-width: 800px) {
+       main{
+        width: 100%;
+
+       }
+       section{
+        width: 100%;
+
+       }
+
+}
+
+
+footer{
+    margin-top: 100px;
+}
+
