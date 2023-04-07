@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   
+    <meta name="description" content="Web oficial del Club Champagnat. Todas las noticias relacionadas con el champa, venta de entradas, servicios al socio y las personas e información sobre el club">
+    
+    <meta name="keywords" content="rugby, hockey, handball, basquetball, gimnasio, disfrute, champagnat, montevideo, deporte, salud, socios, unidad, campamento, cultura, jovenes, asociación, noticias, fotos, novedades, eventos, publicaciones, descubri, horarios, actividades, recreativas, trabajo, oportunidades, uruguay, alma, mente, cuerpo, todos, lugar">
+    
     <link rel="shortcut icon" href="./imagenes/91046109_2981594358586777_4654779993698598912_n.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -14,29 +19,46 @@
  
 <div class="contenedor">
   <header>
-    <h1 class="decoracion">@CLUB CHAMPAGNAT</h1>
-    <nav>
-      <ul>
-        <li class="barrainicio"><a href="./index.html">INICIO</a></li>
-        <li class="barrainicio"><a href="">DEPORTES</a></li>
-        <li class="barrainicio"><a href="">SOCIOS</a></li>
-        <li class="barrainicio"><a href="./html/gimnasio.html">GIMNASIO</a></li>
-        <li class="barrainicio"><a href="./html/actividades.html">ACTIVIDADES</a></li>
-        <li class="barrainicio"><a href="./html/contacto.html">CONTACTO</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">@CLUB CHAMPAGNAT</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+            <a class="nav-link" href="./html/actividades.html">ACTIVIDADES</a>
+            <a class="nav-link" href="./html/gimnasio.html">GIMNASIO</a>
+            <a class="nav-link" href="#" >SOCIOS</a>
+            <a class="nav-link" href="#" >DEPORTES</a>
+            <a class="nav-link" href="./html/contacto.html" >CONTACTO</a>
+          </div>
+        </div>
+      </div>
     </nav>
     <img src="./imagenes/50487715_2178055632273991_2081793123935059968_n.jpg" alt="club champagnat soy mi club logo" class="imagengrande">
   </header>
-  
+
+   <form action="form.php" method="post">
+       <label for="Nombre">Nombre</label>
+       <input type="text" name="Nombre">
+       <input type="text" name="apellido" placeholder="apellido">
+       <input type="number" min="18">
+       <input type="password">
+       <input type="submit">
+
+
+    </form>
  
   <main id="index_main">
 
    <div>
        <h1 class="titulo">INICIO DE PRETEMPORADA 2023</h1>
-       <p class="parrafo1">Comienzo este martes 31/01 en la cancha de la rambla, hora 20:30</p>
+       <p class="p2">Comienzo este martes 31/01 en la cancha de la rambla, hora 20:30</p>
    </div>
    <div>
-       <img src="./imagenes/323412027_3356399187931187_1875767761974358516_n (1).jpg"  alt="jugador de champagnat realizando la convercion " class="juanip">
+       <img src="./imagenes/323412027_3356399187931187_1875767761974358516_n (1).jpg" alt="jugador de champagnat pateando una convercion" class="pelotap">
    </div>
    <div>
        <h2>IMAGENES DE PARTIDOS</h2>
@@ -57,30 +79,69 @@
 
 
   <section id="index-section">
-     <div>
-       <a href="./html/horariosrugby.htm"><img src="./imagenes/314750364_5778737952205723_3864011634124677379_n.jpg" class="img1" alt="jugas al rugby"></a>
+   <div>
+       <a href="./html/horariosrugby.html"><img src="./imagenes/314750364_5778737952205723_3864011634124677379_n.jpg" class="img1" alt="jugas al rugby"></a>
+   </div>
+   <div>
        <h3>HORARIOS RUGBY</h3>
+   </div>
+   <div>
        <a href=""><img src="./imagenes/314065909_5778737942205724_6217289695536939336_n.jpg" alt="jugas al handball"></a>
+   </div>
+   <div>
        <h3>HORARIOS HANDBALL</h3>
+   </div>
+   <div>
        <a href=""><img src="./imagenes/315320172_5778737938872391_5550802408379800876_n.jpg" alt="jugas al hockey"></a>
+   </div>
+   <div>
        <h3>HORARIOS HOCKEY</h3>
-     </div>
+   </div>
+   <div>
      <a href=""><img src="./imagenes/329641895_593135365484959_919866035169609797_n.jpg" class="pelota" alt="pelota de rugby"></a>
+   </div>
+   <div>
      <h3>INSCRIPCIONES</h3>
-     
+   </div>
+   <div>
      <iframe width="560" height="315" src="https://www.youtube.com/embed/jgAnBWJV9hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <p class="parrafo1">El Rugby es un deporte de equipo originario de Inglaterra. Es muy popular en las Islas Británicas y en otros países anglosajones, especialmente en aquellos que son ex colonias como Australia, Nueva Zelanda y Sudáfrica y en otros como Francia e Italia.
       En el Rugby es característico el respeto por las reglas, que deben respetar tanto los jugadores como el público. Las decisiones del juez rara vez son discutidas y dichas discusiones pueden provocar fuertes sanciones. Además es un deporte en el que se fomenta la sociabilidad.</p>
-      
+   </div>
   </section>
 
-  <aside>
-    <img src="./imagenes/FmwieyAWYAEKkf1.jpg" alt="anuario 2023">
-    <h4>Agenda 2023, retirala en la sede</h4>
+  <aside class="conteiner-fluid">
+    <div class="row">
+      <div id="carouselExample" class="carousel slide col-4">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imagenes/FmwieyAWYAEKkf1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/322678622_882994492838685_6523625109227830567_n.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/322841489_886080689091674_6819858991056442187_n.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="col-4">
+        <h2>Compra tu agenda del 2023, con imagenes de los paridos y jugadores del club!!</h2>
+      </div>
+
+    </div>
   </aside>
 
-  <footer>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1426.6214457262029!2d-56.15647784420995!3d-34.926242578094744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f8178ff11dbd5%3A0xc14584e0e93c34e0!2sClub%20Champagnat%20de%20Rugby!5e0!3m2!1ses-419!2suy!4v1674773746032!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   <footer>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1426.6214457262029!2d-56.15647784420995!3d-34.926242578094744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f8178ff11dbd5%3A0xc14584e0e93c34e0!2sClub%20Champagnat%20de%20Rugby!5e0!3m2!1ses-419!2suy!4v1674773746032!5m2!1ses-419!2suy" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <h2>LINKS</h2>
     <ul class="links">
       <li><a href="http://uru.org.uy/">Union de rugby del uruguay</a></li>
@@ -94,6 +155,12 @@
   </footer>
   </div>
 </div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -1,15 +1,6 @@
-header nav ul li a{
-    color: white;
-    text-align: end;
-    flex-direction: row;
-      
-}
-header{
-    background-color: black; 
-    background-size: cover;
-    flex-direction: row;
+@import "./base/_variable";
 
-}
+@import "./componets/_header.scss";
 
 .barrainicio{
     flex-direction: row;
@@ -56,7 +47,7 @@ footer{
 }
 
 .skills{
-    padding: 1em 0 ;
+    padding: 2em 0 ;
 
 }
 .skills__items{
@@ -67,7 +58,7 @@ footer{
 .skills__bar{
     width: 600px;
     height: 8px;
-    background-color: yellow;
+    background-color: rgb(255, 0, 0);
 
 }
 
@@ -292,15 +283,16 @@ section div{
 
 #index_main{
     margin-top: 50px;
+    margin: 50px;
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr;
-    grid-template-rows: 0.3fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
     grid-template-areas: 
     "titulo titulo titulo"
-    "img1 img2 img3"
-    "text1 text2 text3";
-    row-gap: 50px;
-    column-gap: 50px;
+    "img3 img1 img2"
+    "text3 text2 text1";
+    row-gap: 10px;
+    column-gap: 150px;
 }
 
 #index_main div:nth-child(1){
@@ -308,7 +300,7 @@ section div{
 }
 
 #index_main div:nth-child(2){
-    grid-area: imag1;
+    grid-area: img1;
 }
 
 #index_main div:nth-child(3){
@@ -331,8 +323,9 @@ section div{
     grid-area: text3;
 }
 section div{
-    background-color: white;
-    background-size: cover;
+    background-color: rgba(25, 32, 164, 0.596);
+    color: white;
+    
 }
 
 .contenidocontacto{
@@ -347,7 +340,7 @@ main{
         }
     }
 }
-.parrafo1{color: white;}
+.parrafo1{color:white;}
 
 .contenidoactividades{
     color: white;
@@ -392,5 +385,154 @@ section{
 
 footer{
     margin-top: 100px;
+    width: 100%;
+    height: 20%;
 }
 
+#index_section {
+    margin-top: 50px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: 
+    "img1 img2 img3" 
+    "text1 text2 text3" 
+    "ins1 ins1 ins2" 
+    "vid vid vid";
+    column-gap: 150px;
+    row-gap: 50px;
+  }
+  
+  #index_section div:nth-child(1) {
+    grid-area: img1;
+  }
+  
+  #index_section div:nth-child(2) {
+    grid-area: text1;
+  }
+  
+  #index_section div:nth-child(3) {
+    grid-area: img2;
+  }
+  
+  #index_section div:nth-child(4) {
+    grid-area: text2;
+  }
+  
+  #index_section div:nth-child(5) {
+    grid-area: img3;
+  }
+  
+  #index_section div:nth-child(6) {
+    grid-area: text3;
+  }
+  
+  #index_section div:nth-child(7) {
+    grid-area: ins1;
+  }
+  
+  #index_section div:nth-child(8) {
+    grid-area: ins2;
+  }
+  
+  #index_section div:nth-child(9) {
+    grid-area: vid;
+  }
+
+main{
+    img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+ 
+ aside{
+    display: flex;
+    justify-content: center;
+ }
+ .p2 {
+    color: white;
+ }
+
+ aside{
+    div{
+        h2{
+            
+            color: white;
+            width: auto;
+            height: auto;
+
+        }
+    }
+ }
+
+
+  #main-gym{
+    h2{
+        color: white;
+    }
+  }
+.tabla1{
+  background-color: beige;
+  border-color: black;
+  border-style: double;
+}
+
+#section-gym{
+    h2{
+        color: white;
+    }
+}
+
+#main-gym {
+    margin-top: 50px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 2fr 2fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "text1 text2"
+    "vid1 img1"
+    "vid2 text3"
+    "-- img3";
+    column-gap: 150px;
+    row-gap: 50px;
+  }
+  
+  #main-gym div:nth-child(1) {
+    grid-area: text1;
+  }
+  
+  #main-gym div:nth-child(2) {
+    grid-area: vid1;
+  }
+  
+  #main-gym div:nth-child(3) {
+    grid-area: vid2;
+  }
+  
+  #main-gym div:nth-child(4) {
+    grid-area: text2;
+  }
+  
+  #main-gym div:nth-child(5) {
+    grid-area: img1;
+  }
+  
+  #main-gym div:nth-child(6) {
+    grid-area: text3;
+  }
+  
+  #main-gym div:nth-child(7) {
+    grid-area: img3;
+  }
+
+  form{
+    margin: 70px;
+    color: white;
+  }
+
+  
